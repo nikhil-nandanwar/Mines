@@ -17,8 +17,8 @@ function check(id){
         box.style.backgroundImage = "url('mine.Bomb-X0T.svg')";
 
         setInterval(() => {
-            boy.innerHTML = '<h1> Game Over </h1>';
-        }, 2000);  
+            boy.innerHTML = '<h1> Game Over Please refresh for replay </h1> ';
+        }, 1500);  
     }
     else{
         // console.log("NOT MAth");
