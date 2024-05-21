@@ -18,7 +18,7 @@ function check(id){
 
         setInterval(() => {
             boy.innerHTML = '<h1> Game Over Please refresh for replay </h1> ';
-        }, 1500);  
+        }, 1000);  
     }
     else{
         // console.log("NOT MAth");
