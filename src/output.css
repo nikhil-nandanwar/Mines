@@ -562,6 +562,11 @@ video {
   margin: 1rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -582,6 +587,10 @@ video {
   height: 100svh;
 }
 
+.h-4\/5 {
+  height: 80%;
+}
+
 .w-1\/6 {
   width: 16.666667%;
 }
@@ -596,6 +605,14 @@ video {
 
 .w-svw {
   width: 100svw;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .flex-col {
@@ -651,4 +668,18 @@ video {
 .hover\:bg-naya-green:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(93 245 81 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:h-96 {
+    height: 24rem;
+  }
+
+  .md\:w-9 {
+    width: 2.25rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
 }
