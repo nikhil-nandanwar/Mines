@@ -578,6 +578,10 @@ video {
   height: 100vh;
 }
 
+.h-svh {
+  height: 100svh;
+}
+
 .w-1\/6 {
   width: 16.666667%;
 }
@@ -588,6 +592,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-svw {
+  width: 100svw;
 }
 
 .flex-col {
