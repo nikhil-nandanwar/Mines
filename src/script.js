@@ -22,7 +22,7 @@ document.querySelectorAll('div[id]').forEach((id) => {
 
             setInterval(() => {
                 boy.innerHTML = '<h1> Game Over Please refresh for replay </h1> ';
-            }, 1000);  
+            }, 700);  
         }
         else{
             // console.log("NOT MAth");
@@ -33,23 +33,7 @@ document.querySelectorAll('div[id]').forEach((id) => {
 })
 
 
-function check(id){
-    const box = document.getElementById(`${id}`);
-    box.style.backgroundColor = "#8f6ddbc2";
 
-    if(id == id1 || id == id2 || id == id3){
-        box.style.backgroundImage = "url('../images/mine.Bomb-X0T.svg')";
-
-        setInterval(() => {
-            boy.innerHTML = '<h1> Game Over Please refresh for replay </h1> ';
-        }, 1000);  
-    }
-    else{
-        // console.log("NOT MAth");
-        box.style.backgroundImage = "url('../images/dimond-BH.svg')"
-        box.style.backgroundRepeat = "no-repeat"
-    }
-}
 
 // const form = document.querySelector('form');
 // const select = document.querySelector('select');
