@@ -11,12 +11,34 @@ console.log(id3);
 
 const boy = document.querySelector('div');
 
+document.querySelectorAll('div[id]').forEach((id) => {
+    id.addEventListener('click', (e) => {
+        const id = e.target.id;
+        const box = document.getElementById(`${id}`);
+        box.style.backgroundColor = "#8f6ddbc2";
+
+        if(id == id1 || id == id2 || id == id3){
+            box.style.backgroundImage = "url('../images/mine.Bomb-X0T.svg')";
+
+            setInterval(() => {
+                boy.innerHTML = '<h1> Game Over Please refresh for replay </h1> ';
+            }, 1000);  
+        }
+        else{
+            // console.log("NOT MAth");
+            box.style.backgroundImage = "url('../images/dimond-BH.svg')"
+            box.style.backgroundRepeat = "no-repeat"
+        }
+    })
+})
+
+
 function check(id){
     const box = document.getElementById(`${id}`);
     box.style.backgroundColor = "#8f6ddbc2";
 
     if(id == id1 || id == id2 || id == id3){
-        box.style.backgroundImage = "url('mine.Bomb-X0T.svg')";
+        box.style.backgroundImage = "url('../images/mine.Bomb-X0T.svg')";
 
         setInterval(() => {
             boy.innerHTML = '<h1> Game Over Please refresh for replay </h1> ';
@@ -24,7 +46,7 @@ function check(id){
     }
     else{
         // console.log("NOT MAth");
-        box.style.backgroundImage = "url('dimond-BH.svg')"
+        box.style.backgroundImage = "url('../images/dimond-BH.svg')"
         box.style.backgroundRepeat = "no-repeat"
     }
 }
