@@ -18,7 +18,7 @@ document.querySelectorAll('div[id]').forEach((id) => {
         
         if(id == id1 || id == id2 || id == id3){
             box.style.backgroundColor = "#8f6ddbc2";
-            box.style.backgroundImage = "url('../images/mine.Bomb-X0T.svg')";
+            box.style.backgroundImage = "url('./images/mine.Bomb-X0T.svg')";
 
             setInterval(() => {
                 boy.innerHTML = '<h1> Game Over Please refresh for replay </h1> ';
@@ -28,7 +28,7 @@ document.querySelectorAll('div[id]').forEach((id) => {
         else{
             box.style.backgroundColor = "#8f6ddbc2";
             // console.log("NOT MAth");
-            box.style.backgroundImage = "url('../images/dimond-BH.svg')"
+            box.style.backgroundImage = "url('./images/dimond-BH.svg')"
             box.style.backgroundRepeat = "no-repeat"
         }
     })
