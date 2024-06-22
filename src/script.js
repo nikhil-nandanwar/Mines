@@ -51,39 +51,61 @@ document.querySelectorAll('div[id]').forEach((id) => {
 // }
 
 
-// let value = 0;
+// let value = 3;
 // let arr = [];
 
 // select.addEventListener('change' , (e) => {
-//     console.log(e.target.value);
-//     if(value === 0){
+//     if(value === 3 && arr.length === 0){
 //         value = e.target.value;
-//         if(value <= 13){
+//         if(value <= 13 ){
+//             arr = [];
 //             greaterMines();
+
 //         }
 //         else{
-        
+//             arr = [];
+//             greaterDiamond();            
 //         }
 //     }
 //     else{
-
+//         alert("Hello")
 //     }
 // })
 
 // const greaterMines =  () => {
-//     console.log("Hello");
-//     while(value != 0){
+//     let cnt = 0;
+//     while(value > cnt){
 //         let num = Math.floor(Math.random() *25 +1);
 //         if(!arr.includes(num)){
 //             arr.push(num);
-//             console.log(arr);
-//             value--;
+//             cnt++;
 //         }
 //     }
 // }
 
+// const greaterDiamond = () => {
+//     let cnt = 0;
+//     while(value + cnt < 25){
+//         let num = Math.floor(Math.random() *25 +1);
+//         if(!arr.includes(num)){
+//             arr.push(num);
+//             cnt++;
+//         }
+//     }
+// }
 
+// const boxes = document.querySelectorAll('div[id]');
 
+// boxes.forEach( (box) => {
+//     box.addEventListener('click', (e) => {
+//         console.log(value);
+//         const id = e.target.id;
+//         console.log(id);
+//         const div = document.getElementById(`${id}`);
+//         console.log(div);
+        
+//     })
+// })
 
 
 
