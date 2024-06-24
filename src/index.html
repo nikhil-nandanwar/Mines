@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Document</title>
     <link href="output.css" rel="stylesheet">
+    <style>
+      dialog::backdrop {
+      backdrop-filter: blur(3px);
+    }
+
+    </style>
 </head>
-<body >
+<body class="">
 
    <div class="h-svh w-svw bg-slate-800 flex flex-col items-center justify-center">
     <h1 class="text-white text-4xl font-bold my-4">
@@ -49,10 +55,73 @@
     </div>   
    </div>
 
-
-   <script src="script.js">
+   <dialog id="dlg" class="hidden flex  items-center justify-center w-80 h-2/5 rounded-lg bg-slate-400">
     
-   </script>
+    <div class="h-auto flex flex-col items-center w-full">
+      <h1 class="text-2xl font-semibold text-center p-3 m-3">
+        Game Over
+      </h1>
+      <img src="./images/mine.Bomb-X0T.svg" alt="You Found Bomb" class="w-20 h-20 m-3 ">
+      
+      <button
+        type="button"
+        id="refreshButton"
+        class="inline-flex items-center rounded-md bg-black px-3 py-2 m-3 text-sm font-semibold text-white hover:bg-black/80">
+        Play again
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="ml-2 h-4 w-4"
+        >
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+
+    </div>
+
+    
+   </dialog>
+
+
+   <dialog id="interrupt" class="hidden flex  items-center justify-center w-80 h-2/5 rounded-lg bg-slate-400">
+    
+    <div class="h-auto flex flex-col items-center w-full">
+      <h1 class="text-2xl font-semibold text-center p-3 m-3">
+        Mines changes between game
+      </h1>
+      <img src="./images/9193513_peace_plant_icon.svg" alt="You Found Bomb" class="w-20 h-20 m-3 ">
+      
+     <div class="flex ">
+      <button
+      type="button"
+      id="refreshButton"
+      class="inline-flex items-center rounded-md bg-black px-3 py-2 m-3 text-sm font-semibold text-white hover:bg-black/80">
+      Refresh
+      
+    </button>
+    <button
+      type="button"
+      id="continue"
+      class="inline-flex items-center rounded-md bg-black px-3 py-2 m-3 text-sm font-semibold text-white hover:bg-black/80">
+      Continue
+      
+    </button>
+     </div>
+
+    </div>
+
+    
+   </dialog>
+   <script src="selectForm.js"></script>
+   <script src="script.js"> </script>
    
 </body>
 </html>
