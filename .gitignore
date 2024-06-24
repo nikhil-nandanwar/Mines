@@ -1,5 +1,3 @@
-.vscode
-src/output.css
 
 # Dependencies
 node_modules/
@@ -21,8 +19,7 @@ npm-debug.log*
 # Optional REPL history
 .node_repl_history
 
-# Build directory
-dist/
+
 
 # Production
 build/
