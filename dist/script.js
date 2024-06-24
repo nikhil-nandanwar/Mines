@@ -41,12 +41,12 @@ document.querySelectorAll('div[id]').forEach((divs) => {
         // console.log(box);
         if(arr.indexOf(Number(id)) === -1){
             box.style.backgroundColor = "#8f6ddbc2";
-            box.style.backgroundImage = "url('../images/dimond-BH.svg')";
+            box.style.backgroundImage = "url('./images/dimond-BH.svg')";
             box.style.backgroundRepeat = "no-repeat";
         }
         else{
             box.style.backgroundColor = "#8f6ddbc2";
-            box.style.backgroundImage = "url('../images/mine.Bomb-X0T.svg')";
+            box.style.backgroundImage = "url('./images/mine.Bomb-X0T.svg')";
             setInterval(() => {
                 const dialoge = document.getElementById('dlg');
                 dialoge.showModal();
