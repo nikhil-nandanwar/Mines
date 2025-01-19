@@ -2,7 +2,7 @@
 
 A modern, web-based implementation of the classic Minesweeper game with a clean and responsive user interface.
 
-**🎮 [Play Mines Online](https://mines-game.netlify.app/)**
+**🎮 [Live link - Play Mines Online](https://mines-game.netlify.app/)**
 
 ## About the Game
 
